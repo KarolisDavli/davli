@@ -1,5 +1,9 @@
-.container {
+import .container {
   padding: 0 2rem;
+}
+
+.heading1 {
+  font-size: 4rem;
 }
 
 .main {
