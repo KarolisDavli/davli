@@ -1,16 +1,19 @@
 import Meta from "../components/Meta";
-import Workcard from "../components/workCard";
-import {
-  Container,
-  VStack,
-  Text,
-  Box,
-  Image,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import Workcard from "../components/Workcard";
+import works from "./api/works/works";
+import works2 from "./api/works/works2";
+
+import {Container, VStack, Text, Box, Image} from "@chakra-ui/react";
 
 export default function Home() {
+  function renderWorks(el) {
+    return (
+      <Box key={el.id}>
+        <Workcard role={el.role} src={el.src} title={el.title} desc={el.desc} />
+      </Box>
+    );
+  }
+
   return (
     <>
       {/**Hero */}
@@ -23,7 +26,7 @@ export default function Home() {
             <Text maxW="360px">
               <Text as="i">
                 <span>Hey there!</span>
-              </Text>{" "}
+              </Text>
               My name is Karolis. I design & build awesome web projects for
               startups or anyone who needs an online presence.
             </Text>
@@ -31,10 +34,8 @@ export default function Home() {
         </Box>
         <Box display="flex" alignItems="center" justifyContent="flex-end">
           <Image src="./arrowdown.svg" alt="arrow down" />
-          <Text textStyle="featured">
-            Featured
-            <br />
-            Work
+          <Text textStyle="featured" maxW="4.1rem">
+            Featured Work
           </Text>
         </Box>
       </Container>
@@ -43,44 +44,10 @@ export default function Home() {
       <Container maxW="container.lg" mt="40">
         <Box display="flex" gap="5rem">
           <Box display="flex" flexDir="column" gap="5rem" mt="20">
-            <Box>
-              <Workcard
-                src="/sanjow.png"
-                alt="Design preview"
-                role="Web Design & Development"
-                title="Sanjow"
-                desc="E-commerce group Sanjow website redesign"
-              />
-            </Box>
-            <Box>
-              <Workcard
-                src="/sanjow.png"
-                alt="Design preview"
-                role="Web Design & Development"
-                title="Sanjow"
-                desc="E-commerce group Sanjow website redesign"
-              />
-            </Box>
+            {works.map(renderWorks)}
           </Box>
           <Box display="flex" flexDir="column" gap="5rem">
-            <Box>
-              <Workcard
-                src="/sanjow.png"
-                alt="Design preview"
-                role="Web Design & Development"
-                title="Sanjow"
-                desc="E-commerce group Sanjow website redesign"
-              />
-            </Box>
-            <Box>
-              <Workcard
-                src="/sanjow.png"
-                alt="Design preview"
-                role="Web Design & Development"
-                title="Sanjow"
-                desc="E-commerce group Sanjow website redesign"
-              />
-            </Box>
+            {works2.map(renderWorks)}
           </Box>
         </Box>
       </Container>
