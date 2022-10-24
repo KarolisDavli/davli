@@ -10,7 +10,7 @@ export default function Abount() {
         <Box display="flex" alignItems="center">
           <Image
             borderRadius="1.5rem"
-            src="/setup.jpg"
+            src="/mysetup.jpg"
             alt="picture of not me"
           />
         </Box>
