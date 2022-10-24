@@ -25,7 +25,7 @@ export default function Home() {
             <Text textStyle="h2">UI Developer</Text>
             <Text maxW="360px">
               <Text as="i">
-                <span>Hey there!</span>
+                <span>Hey there! </span>
               </Text>
               My name is Karolis. I design & build awesome web projects for
               startups or anyone who needs an online presence.

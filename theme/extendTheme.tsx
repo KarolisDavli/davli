@@ -15,7 +15,7 @@ const theme = extendTheme({
     h2: {
       fontFamily: `'Lexend Deca', ${base.fonts?.heading}`,
       fontSize: "24px",
-      fontWeight: "500",
+      fontWeight: "400",
     },
     role: {
       fontFamily: `'Commissioner', ${base.fonts?.body}`,

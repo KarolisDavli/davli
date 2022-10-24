@@ -7,7 +7,7 @@ export default function Meta({title, keywords, description}) {
       <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
       <meta charSet="utf-8" />
-      <link rel="shortcut icon" sizes="32x32" href="/fav.png" />
+      <link rel="shortcut icon" sizes="32x32" href="/favi.svg" />
       <title>{title}</title>
     </Head>
   );
