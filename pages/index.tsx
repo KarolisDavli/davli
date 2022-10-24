@@ -5,6 +5,8 @@ import works2 from "./api/works/works2";
 
 import {Container, VStack, Text, Box, Image} from "@chakra-ui/react";
 
+import {motion} from "framer-motion";
+
 export default function Home() {
   function renderWorks(el) {
     return (
@@ -32,8 +34,25 @@ export default function Home() {
             </Text>
           </VStack>
         </Box>
-        <Box display="flex" alignItems="center" justifyContent="flex-end">
-          <Image src="./arrowdown.svg" alt="arrow down" />
+        <Box
+          display="flex"
+          alignItems="center"
+          justifyContent="flex-end"
+          overflow="hidden"
+        >
+          <motion.div
+            initial={{y: -50, opacity: 0.2}}
+            animate={{y: 100, opacity: 1}}
+            transition={{
+              ease: "easeInOut",
+              duration: 2,
+              repeat: Infinity,
+              delay: 1,
+            }}
+          >
+            <Image src="./arrowdown.svg" alt="arrow down" />
+          </motion.div>
+
           <Text textStyle="featured" maxW="4.1rem">
             Featured Work
           </Text>
