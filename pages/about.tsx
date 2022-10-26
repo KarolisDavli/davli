@@ -6,8 +6,8 @@ export default function Abount() {
     <>
       {/**About here */}
       <Meta title="Davli" />
-      <Container maxW="container.lg" p="3rem">
-        <Box display="flex" justifyContent="center">
+      <Container maxW="container.lg">
+        <Box display="flex" justifyContent="center" p="3rem">
           <Image
             boxSize={{base: "auto", sm: "auto", md: "500px"}}
             width={{base: "auto", sm: "auto", md: "auto"}}

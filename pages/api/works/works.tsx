@@ -1,6 +1,7 @@
 const works = [
   {
     id: 1,
+    href: "/sanjow",
     role: "Web Design & Development",
     alt: "Sanjow design image",
     src: "/san.jpg",
@@ -9,6 +10,7 @@ const works = [
   },
   {
     id: 2,
+    href: "/sanjow",
     role: "Web Design & Development",
     alt: "Sanjow design image",
     src: "/san.jpg",

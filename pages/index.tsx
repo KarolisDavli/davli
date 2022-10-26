@@ -11,7 +11,13 @@ export default function Home() {
   function renderWorks(el) {
     return (
       <Box key={el.id}>
-        <Workcard role={el.role} src={el.src} title={el.title} desc={el.desc} />
+        <Workcard
+          href={el.href}
+          role={el.role}
+          src={el.src}
+          title={el.title}
+          desc={el.desc}
+        />
       </Box>
     );
   }
