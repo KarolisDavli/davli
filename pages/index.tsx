@@ -27,7 +27,7 @@ export default function Home() {
       {/**Hero */}
       <Meta title="Davli" />
       <Container maxW="container.md">
-        <Box display="flex" alignItems="center" height="80vh">
+        <Box display="flex" alignItems="center" height="100vh">
           <VStack spacing="16px" alignItems="right">
             <Box textStyle="h1">Karolis Davli</Box>
             <Text textStyle="h2">UI Developer</Text>

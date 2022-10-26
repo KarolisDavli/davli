@@ -1,4 +1,5 @@
 import {Container, VStack, Text, Box, Image} from "@chakra-ui/react";
+import FindHome from "../components/FindHome";
 import Meta from "../components/Meta";
 
 export default function Abount() {
@@ -6,6 +7,7 @@ export default function Abount() {
     <>
       {/**About here */}
       <Meta title="Davli" />
+      <FindHome />
       <Container maxW="container.lg">
         <Box display="flex" justifyContent="center" p="3rem">
           <Image
@@ -19,7 +21,7 @@ export default function Abount() {
       </Container>
 
       {/**Info */}
-      <Container maxW="container.md">
+      <Container maxW="container.lg">
         <Box display="flex" alignItems="center">
           <VStack spacing="16px" alignItems="right">
             <Box textStyle="h2">
