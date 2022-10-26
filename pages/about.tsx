@@ -9,8 +9,8 @@ export default function Abount() {
       <Container maxW="container.lg" p="3rem">
         <Box display="flex" justifyContent="center">
           <Image
-            boxSize="500px"
-            width="auto"
+            boxSize={{base: "auto", sm: "auto", md: "500px"}}
+            // width={{base: "column", sm: "column", md: "row"}}
             borderRadius="1.5rem"
             src="/mysetup.jpg"
             alt="picture of not me"
