@@ -6,9 +6,11 @@ export default function Abount() {
     <>
       {/**About here */}
       <Meta title="Davli" />
-      <Container maxW="container.xl" p="5rem">
-        <Box display="flex" alignItems="center">
+      <Container maxW="container.lg" p="3rem">
+        <Box display="flex" justifyContent="center">
           <Image
+            boxSize="500px"
+            width="auto"
             borderRadius="1.5rem"
             src="/mysetup.jpg"
             alt="picture of not me"
