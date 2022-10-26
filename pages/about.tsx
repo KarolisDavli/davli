@@ -21,7 +21,7 @@ export default function Abount() {
       </Container>
 
       {/**Info */}
-      <Container maxW="container.lg">
+      <Container maxW="container.md">
         <Box display="flex" alignItems="center">
           <VStack spacing="16px" alignItems="right">
             <Box textStyle="h2">
