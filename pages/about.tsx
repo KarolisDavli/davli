@@ -10,7 +10,7 @@ export default function Abount() {
         <Box display="flex" justifyContent="center">
           <Image
             boxSize={{base: "auto", sm: "auto", md: "500px"}}
-            // width={{base: "column", sm: "column", md: "row"}}
+            width={{base: "auto", sm: "auto", md: "auto"}}
             borderRadius="1.5rem"
             src="/mysetup.jpg"
             alt="picture of not me"
