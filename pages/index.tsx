@@ -61,7 +61,13 @@ export default function Home() {
 
       {/**Works */}
       <Container maxW="container.lg" mt="40">
-        <Box display="flex" gap="5rem">
+        <Box
+          display="flex"
+          w="100%"
+          flexDir={{base: "column", sm: "column", md: "row"}}
+          alignItems={{base: "center"}}
+          gap={{base: "5rem", md: "2rem"}}
+        >
           <Box display="flex" flexDir="column" gap="5rem" mt="20">
             {works.map(renderWorks)}
           </Box>
