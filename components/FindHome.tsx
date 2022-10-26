@@ -5,7 +5,7 @@ export default function FindHome() {
   return (
     <>
       <Container maxW="container.xl">
-        <Box m="20">
+        <Box mt="20" mb="20" ml={{base: "0", md: "20"}}>
           <Link href="/">
             <a>Back to home</a>
           </Link>
