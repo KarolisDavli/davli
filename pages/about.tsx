@@ -8,11 +8,11 @@ export default function Abount() {
       {/**About here */}
       <Meta title="Davli" />
       <FindHome />
-      <Container maxW="container.lg">
-        <Box display="flex" justifyContent="center" p="3rem">
+      <Container maxW="container.lg" p={{base: "1rem", md: "3rem"}}>
+        <Box display="flex" justifyContent="center">
           <Image
-            boxSize={{base: "auto", sm: "auto", md: "500px"}}
-            width={{base: "auto", sm: "auto", md: "auto"}}
+            // boxSize={{base: "auto", sm: "auto", md: "600px"}}
+            // width={{base: "auto", sm: "auto", md: "auto"}}
             borderRadius="1.5rem"
             src="/mysetup.jpg"
             alt="picture of not me"

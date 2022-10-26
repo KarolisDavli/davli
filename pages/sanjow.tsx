@@ -78,12 +78,12 @@ export default function Sanjow() {
           <Box display="flex" justifyContent="center">
             <Image
               borderRadius="1.5rem"
-              src="/projects/sanjow/sanjow1.jpg"
+              src="/projects/sanjow/sanjow2.jpg"
               alt="Sanjow project image"
             />
           </Box>
           <VStack spacing="16px" alignItems="left" flexBasis="50%">
-            <Box textStyle="h2">Sanjow careers page</Box>
+            <Box textStyle="h2">Sanjow Studio</Box>
             <Text>
               As Sanjow bussiness is growing fast it requires more work power.
               By beeing an excelent place to work Sanjow offers great enviroment
