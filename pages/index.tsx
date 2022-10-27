@@ -3,22 +3,9 @@ import Workcard from "../components/Workcard";
 import works from "./api/works/works";
 import works2 from "./api/works/works2";
 
-import {
-  Container,
-  VStack,
-  Text,
-  Box,
-  Image,
-  chakra,
-  shouldForwardProp,
-} from "@chakra-ui/react";
+import {Container, VStack, Text, Box, Image} from "@chakra-ui/react";
 
-import {motion, isValidMotionProp} from "framer-motion";
-
-const ChakraBox = chakra(motion.div, {
-  shouldForwardProp: (prop) =>
-    isValidMotionProp(prop) || shouldForwardProp(prop),
-});
+import {motion} from "framer-motion";
 
 export default function Home() {
   function renderWorks(el) {
@@ -42,12 +29,10 @@ export default function Home() {
       <Container maxW="container.md">
         <Box display="flex" alignItems="center" height="70vh">
           <VStack spacing="16px" alignItems="right">
-            <ChakraBox
-              initial={{y: 40, opacity: 0.1}}
+            <motion.div
+              initial={{y: 60, opacity: 0}}
               animate={{y: 0, opacity: 1}}
-              // @ts-ignore no problem in operation, although type error appears.
-
-              transition={{duration: 0.8}}
+              transition={{delay: 0.5, duration: 0.4, ease: "easeInOut"}}
             >
               <Box textStyle="h1">Karolis Davli</Box>
 
@@ -59,7 +44,7 @@ export default function Home() {
                 My name is Karolis. I design & build awesome web projects for
                 startups or anyone who needs an online presence.
               </Text>
-            </ChakraBox>
+            </motion.div>
           </VStack>
         </Box>
         <Box
