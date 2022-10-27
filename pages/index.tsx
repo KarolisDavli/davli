@@ -3,9 +3,22 @@ import Workcard from "../components/Workcard";
 import works from "./api/works/works";
 import works2 from "./api/works/works2";
 
-import {Container, VStack, Text, Box, Image} from "@chakra-ui/react";
+import {
+  Container,
+  VStack,
+  Text,
+  Box,
+  Image,
+  chakra,
+  shouldForwardProp,
+} from "@chakra-ui/react";
 
-import {motion} from "framer-motion";
+import {motion, isValidMotionProp} from "framer-motion";
+
+const ChakraBox = chakra(motion.div, {
+  shouldForwardProp: (prop) =>
+    isValidMotionProp(prop) || shouldForwardProp(prop),
+});
 
 export default function Home() {
   function renderWorks(el) {
@@ -27,17 +40,26 @@ export default function Home() {
       {/**Hero */}
       <Meta title="Davli" />
       <Container maxW="container.md">
-        <Box display="flex" alignItems="center" height="100vh">
+        <Box display="flex" alignItems="center" height="70vh">
           <VStack spacing="16px" alignItems="right">
-            <Box textStyle="h1">Karolis Davli</Box>
-            <Text textStyle="h2">UI Developer</Text>
-            <Text maxW="360px">
-              <Text as="i">
-                <span>Hey there! </span>
+            <ChakraBox
+              initial={{y: 40, opacity: 0.1}}
+              animate={{y: 0, opacity: 1}}
+              // @ts-ignore no problem in operation, although type error appears.
+
+              transition={{duration: 0.8}}
+            >
+              <Box textStyle="h1">Karolis Davli</Box>
+
+              <Text textStyle="h2">UI Developer</Text>
+              <Text maxW="360px">
+                <Text as="i">
+                  <span>Hey there! </span>
+                </Text>
+                My name is Karolis. I design & build awesome web projects for
+                startups or anyone who needs an online presence.
               </Text>
-              My name is Karolis. I design & build awesome web projects for
-              startups or anyone who needs an online presence.
-            </Text>
+            </ChakraBox>
           </VStack>
         </Box>
         <Box
