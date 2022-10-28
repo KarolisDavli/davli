@@ -14,8 +14,8 @@ const works = [
     role: "Web Design & Development",
     alt: "Sanjow design image",
     src: "/projects/sanjow/san.jpg",
-    title: "Amerika",
-    desc: "Cool stuff",
+    title: "Sanjow",
+    desc: "E-commerce group Sanjow website redesign",
   },
 ];
 
