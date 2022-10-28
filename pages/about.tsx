@@ -34,14 +34,27 @@ export default function Abount() {
       <Meta title="Davli" />
       <FindHome />
       <Container maxW="container.lg" p={{base: "1rem", md: "3rem"}}>
-        <Box display="flex" justifyContent="center">
-          <Image
+        <Box
+          borderRadius="2rem"
+          bgImage="/mysetup.jpg"
+          h="400px"
+          margin="auto"
+          w="100%"
+          bgSize="fit"
+          bgAttachment="fixed"
+          bgPos="50% -100%"
+          pos="relative"
+          bgRepeat="no-repeat"
+        >
+          {/* <Image
             // boxSize={{base: "auto", sm: "auto", md: "600px"}}
             // width={{base: "auto", sm: "auto", md: "auto"}}
+            maxW="auto"
+            maxH="600px"
             borderRadius="1.5rem"
             src="/mysetup.jpg"
             alt="picture of not me"
-          />
+          /> */}
         </Box>
       </Container>
 
