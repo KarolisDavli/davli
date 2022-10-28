@@ -7,6 +7,29 @@ import {Container, VStack, Text, Box, Image} from "@chakra-ui/react";
 
 import {motion} from "framer-motion";
 
+const containerVariants = {
+  init: {y: 60, opacity: 0},
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      mass: 0.4,
+      damping: 7,
+      delay: 0.3,
+      duration: 0.4,
+      ease: "easeInOut",
+      when: "beforeChildren",
+      staggerChildren: 1,
+    },
+  },
+};
+
+const childVariants = {
+  init: {opacity: 0},
+  visible: {opacity: 1},
+};
+
 export default function Home() {
   function renderWorks(el) {
     return (
@@ -30,20 +53,23 @@ export default function Home() {
         <Box display="flex" alignItems="center" height="70vh">
           <VStack spacing="16px" alignItems="right">
             <motion.div
-              initial={{y: 60, opacity: 0}}
-              animate={{y: 0, opacity: 1}}
-              transition={{delay: 0.5, duration: 0.4, ease: "easeInOut"}}
+              variants={containerVariants}
+              initial="init"
+              animate="visible"
             >
               <Box textStyle="h1">Karolis Davli</Box>
-
-              <Text textStyle="h2">UI Developer</Text>
-              <Text maxW="360px">
-                <Text as="i">
-                  <span>Hey there! </span>
-                </Text>
-                My name is Karolis. I design & build awesome web projects for
-                startups or anyone who needs an online presence.
-              </Text>
+              <motion.div variants={childVariants}>
+                <Text textStyle="h2">UI Developer</Text>
+                <motion.div variants={childVariants} transition={{delay: 0.2}}>
+                  <Text maxW="360px">
+                    <Text as="i">
+                      <span>Hey there! </span>
+                    </Text>
+                    My name is Karolis. I design & build awesome web projects
+                    for startups or anyone who needs an online presence.
+                  </Text>
+                </motion.div>
+              </motion.div>
             </motion.div>
           </VStack>
         </Box>
@@ -60,7 +86,7 @@ export default function Home() {
               ease: "easeInOut",
               duration: 2,
               repeat: Infinity,
-              delay: 1,
+              delay: 0.8,
             }}
           >
             <Image src="./arrowdown.svg" alt="arrow down" />

@@ -1,28 +1,80 @@
 import {Box, Container, Text, Link, Image} from "@chakra-ui/react";
 
+import {motion} from "framer-motion";
+
+const bgAnimation = {
+  init: {y: 200, opacity: 0},
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      mass: 0.4,
+      damping: 7,
+      ease: "easeInOut",
+      when: "beforeChildren",
+      staggerChildren: 1,
+    },
+  },
+};
+
+const childVariants = {
+  init: {opacity: 0},
+  visible: {opacity: 1},
+};
+
 export default function Footer() {
   return (
     <>
-      <Box backgroundColor="black" mt="40">
-        <Container maxW="container.lg" color="white" pt="40" pb="40">
-          <Box display="flex" flexDir="column" gap="5rem">
-            <Box display="flex" flexDir="column" gap="1rem">
-              <Text textStyle="h2">Lets get started!</Text>
-              <Text textStyle="h1">karolis@davli.design</Text>
-            </Box>
-            <Box display="flex" flexDir="column" gap="1rem">
-              <Text>You can also find me on:</Text>
-              <Box display="flex" gap="2rem">
-                <Link>
-                  <Image src="/dribbble.svg" alt="dribble icon" />
-                </Link>
-                <Link>
-                  <Image src="/instagram.svg" alt="instagram icon" />
-                </Link>
+      <Box position="relative" mt="40">
+        <motion.div
+          variants={bgAnimation}
+          initial="init"
+          whileInView="visible"
+          viewport={{amount: 0.1}}
+        >
+          <Box
+            position="absolute"
+            backgroundColor="black"
+            height="400px"
+            width="100%"
+          ></Box>
+        </motion.div>
+        <Box position="absolute" width="100%" transform="translateY(50%)">
+          <Container maxW="container.lg" color="white">
+            <Box display="flex" flexDir="column" gap="3rem">
+              <Box display="flex" flexDir="column" gap="1rem">
+                <motion.div
+                  variants={childVariants}
+                  initial="init"
+                  whileInView="visible"
+                  transition={{delay: 0.2}}
+                >
+                  <Text textStyle="h2">Lets get started!</Text>
+                  <Text textStyle="h1">karolis@davli.design</Text>
+                </motion.div>
               </Box>
+              <motion.div
+                variants={childVariants}
+                initial="init"
+                whileInView="visible"
+                transition={{delay: 0.4}}
+              >
+                <Box display="flex" flexDir="column" gap="1rem">
+                  <Text>You can also find me on:</Text>
+                  <Box display="flex" gap="1rem">
+                    <Link>
+                      <Image src="/dribbble.svg" alt="dribble icon" />
+                    </Link>
+                    <Link>
+                      <Image src="/instagram.svg" alt="instagram icon" />
+                    </Link>
+                  </Box>
+                </Box>
+              </motion.div>
             </Box>
-          </Box>
-        </Container>
+          </Container>
+        </Box>
       </Box>
     </>
   );
