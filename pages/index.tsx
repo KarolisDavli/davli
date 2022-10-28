@@ -60,15 +60,15 @@ export default function Home() {
               <Box textStyle="h1">Karolis Davli</Box>
               <motion.div variants={childVariants}>
                 <Text textStyle="h2">UI Developer</Text>
-                <motion.div variants={childVariants} transition={{delay: 0.2}}>
-                  <Text maxW="360px">
-                    <Text as="i">
-                      <span>Hey there! </span>
-                    </Text>
-                    My name is Karolis. I design & build awesome web projects
-                    for startups or anyone who needs an online presence.
+              </motion.div>
+              <motion.div variants={childVariants} transition={{delay: 0.3}}>
+                <Text maxW="360px">
+                  <Text as="i">
+                    <span>Hey there! </span>
                   </Text>
-                </motion.div>
+                  My name is Karolis. I design & build awesome web projects for
+                  startups or anyone who needs an online presence.
+                </Text>
               </motion.div>
             </motion.div>
           </VStack>

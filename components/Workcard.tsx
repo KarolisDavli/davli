@@ -23,12 +23,7 @@ const cardAnimation = {
 export default function Workcard(props) {
   return (
     <>
-      <motion.div
-        variants={cardAnimation}
-        initial="init"
-        whileInView="visible"
-        viewport={{amount: 0.2}}
-      >
+      <motion.div variants={cardAnimation} initial="init" whileInView="visible">
         <Box display="flex" flexDir="column" gap="32px">
           <motion.div
             whileHover={{scale: 0.98, shadow: "6px 6px 16px rgb(0, 0, 0)"}}
