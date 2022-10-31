@@ -1,6 +1,7 @@
 import {Box, Container, Text, Link, Image} from "@chakra-ui/react";
 
-import {motion} from "framer-motion";
+import {motion, useInView} from "framer-motion";
+import {useRef} from "react";
 
 const bgAnimation = {
   init: {y: 200, opacity: 0},
@@ -11,6 +12,7 @@ const bgAnimation = {
       type: "spring",
       mass: 0.4,
       damping: 7,
+      duration: 0.9,
       ease: "easeInOut",
       when: "beforeChildren",
       staggerChildren: 1,
@@ -23,9 +25,16 @@ const childVariants = {
   visible: {opacity: 1},
 };
 
+function Section({children}) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once: false});
+
+  return <section ref={ref}>{children}</section>;
+}
+
 export default function Footer() {
   return (
-    <>
+    <Section>
       <Box position="relative" mt="40">
         <motion.div
           variants={bgAnimation}
@@ -76,6 +85,6 @@ export default function Footer() {
           </Container>
         </Box>
       </Box>
-    </>
+    </Section>
   );
 }

@@ -16,7 +16,7 @@ const containerVariants = {
       type: "spring",
       mass: 0.4,
       damping: 7,
-      delay: 0.3,
+      delay: 0.1,
       duration: 0.4,
       ease: "easeInOut",
       when: "beforeChildren",
@@ -61,7 +61,7 @@ export default function Home() {
               <motion.div variants={childVariants}>
                 <Text textStyle="h2">UI Developer</Text>
               </motion.div>
-              <motion.div variants={childVariants} transition={{delay: 0.3}}>
+              <motion.div variants={childVariants} transition={{delay: 0.2}}>
                 <Text maxW="360px">
                   <Text as="i">
                     <span>Hey there! </span>

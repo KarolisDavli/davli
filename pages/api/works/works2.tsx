@@ -1,7 +1,7 @@
 const works2 = [
   {
     id: 3,
-    href: "/admin",
+    href: "/adminnp",
     role: "Web Design",
     alt: "Admin solutions design image",
     src: "/projects/admin/admin.jpg",
