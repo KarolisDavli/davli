@@ -4,7 +4,7 @@ import {motion, useInView} from "framer-motion";
 import {useRef} from "react";
 
 const cardAnimation = {
-  init: {y: 150, opacity: 0},
+  init: {opacity: 0, y: 200},
   visible: {
     y: 0,
     opacity: 1,
@@ -24,7 +24,14 @@ const cardAnimation = {
 function Section({children}) {
   const ref = useRef(null);
 
-  return <section ref={ref}>{children}</section>;
+  return (
+    <section
+      style={{overflow: "hidden", borderRadius: "1rem 1rem 0 0"}}
+      ref={ref}
+    >
+      {children}
+    </section>
+  );
 }
 
 export default function Workcard(props) {

@@ -21,6 +21,11 @@ const theme = extendTheme({
       fontFamily: `'Commissioner', ${base.fonts?.body}`,
       opacity: "0.5",
     },
+    mobileh2: {
+      fontFamily: `'Lexend Deca', ${base.fonts?.heading}`,
+      fontSize: "30px",
+      fontWeight: "600",
+    },
   },
   colors: {
     black: "#272727",

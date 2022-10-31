@@ -27,7 +27,6 @@ const childVariants = {
 
 function Section({children}) {
   const ref = useRef(null);
-  const isInView = useInView(ref, {once: false});
 
   return <section ref={ref}>{children}</section>;
 }
@@ -60,7 +59,9 @@ export default function Footer() {
                   transition={{delay: 0.2}}
                 >
                   <Text textStyle="h2">Lets get started!</Text>
-                  <Text textStyle="h1">karolis@davli.design</Text>
+                  <Text textStyle={{base: "mobileh2", md: "h1"}}>
+                    karolis@davli.design
+                  </Text>
                 </motion.div>
               </Box>
               <motion.div
