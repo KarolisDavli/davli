@@ -37,12 +37,12 @@ export default function Abount() {
         <Box
           borderRadius="2rem"
           bgImage="/mysetup.jpg"
-          h="400px"
           margin="auto"
-          w="100%"
-          bgSize="fit"
+          h="200px"
+          w="600px"
+          bgSize="cover"
           bgAttachment="fixed"
-          bgPos="50% -100%"
+          bgPos="0% -100%"
           pos="relative"
           bgRepeat="no-repeat"
         >

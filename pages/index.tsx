@@ -8,7 +8,7 @@ import {Container, VStack, Text, Box, Image} from "@chakra-ui/react";
 import {motion} from "framer-motion";
 
 const containerVariants = {
-  init: {y: 60, opacity: 0},
+  init: {y: 150, opacity: 0},
   visible: {
     y: 0,
     opacity: 1,
