@@ -81,7 +81,7 @@ export default function Sanjow() {
       </Container>
       {/**HeroImage */}
       <Box display="flex" justifyContent="center" p="1rem" mt="20">
-        <video width="1150" autoPlay loop>
+        <video width="1150" autoPlay loop playsInline>
           <source src="/projects/aloe/aloelanding.mp4" type="video/mp4" />
         </video>
       </Box>
@@ -156,7 +156,7 @@ export default function Sanjow() {
         whileInView="visible"
       >
         <Box display="flex" justifyContent="center" p="1rem" mt="20">
-          <video width="1150" autoPlay loop>
+          <video playsInline width="1150" autoPlay loop>
             <source src="/projects/aloe/checkout.mp4" type="video/mp4" />
           </video>
         </Box>
