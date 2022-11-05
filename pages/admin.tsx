@@ -71,7 +71,12 @@ export default function Sanjow() {
         </Box>
       </Container>
       {/**HeroImage */}
-      <Box display="flex" justifyContent="center" p="1rem" mt="20">
+      <Box
+        display="flex"
+        justifyContent="center"
+        p="1rem"
+        mt={{base: "10", md: "20"}}
+      >
         <Image
           borderRadius="1.5rem"
           src="/projects/admin/adminhero.jpg"
@@ -79,7 +84,7 @@ export default function Sanjow() {
         />
       </Box>
       {/**Detailed pages */}
-      <Container maxW="container.lg" mt="20">
+      <Container maxW="container.lg" mt={{base: "10", md: "20"}}>
         <motion.div
           variants={containerVariants}
           initial="init"

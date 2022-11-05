@@ -99,7 +99,7 @@ export default function Home() {
       </Container>
 
       {/**Works */}
-      <Container maxW="container.lg" mt="40">
+      <Container maxW="container.lg" mt={{base: "0", md: "40"}}>
         <Box
           display="flex"
           w="100%"

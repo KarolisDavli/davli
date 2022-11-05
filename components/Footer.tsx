@@ -4,7 +4,7 @@ import {motion, useInView} from "framer-motion";
 import {useRef} from "react";
 
 const bgAnimation = {
-  init: {y: 200, opacity: 0},
+  init: {opacity: 0},
   visible: {
     y: 0,
     opacity: 1,

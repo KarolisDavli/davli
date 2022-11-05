@@ -80,14 +80,19 @@ export default function Sanjow() {
         </Box>
       </Container>
       {/**HeroImage */}
-      <Box display="flex" justifyContent="center" p="1rem" mt="20">
+      <Box
+        display="flex"
+        justifyContent="center"
+        p="1rem"
+        mt={{base: "10", md: "20"}}
+      >
         <video width="1150" autoPlay loop playsInline>
           <source src="/projects/aloe/aloelanding.mp4" type="video/mp4" />
         </video>
       </Box>
 
       {/**Detailed pages */}
-      <Container maxW="container.lg" mt="20">
+      <Container maxW="container.lg" mt={{base: "10", md: "20"}}>
         <motion.div
           variants={containerVariants}
           initial="init"
@@ -118,7 +123,7 @@ export default function Sanjow() {
         </motion.div>
       </Container>
 
-      <Container maxW="container.lg" mt="20">
+      <Container maxW="container.lg" mt={{base: "10", md: "20"}}>
         <motion.div
           variants={containerVariants}
           initial="init"
