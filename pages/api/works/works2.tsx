@@ -12,9 +12,9 @@ const works2 = [
     id: 4,
     href: "/sanjow",
     role: "Web Design & Development",
-    alt: "Sanjow design image",
-    src: "/projects/sanjow/san.jpg",
-    title: "Pilates",
+    alt: "Body Fuel design image",
+    src: "/projects/bodyfuel/bodyfuel.jpg",
+    title: "Body Fuel",
     desc: "This is amazing",
   },
 ];
