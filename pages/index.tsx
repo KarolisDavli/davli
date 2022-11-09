@@ -80,21 +80,18 @@ export default function Home() {
           overflow="hidden"
         >
           <motion.div
-            initial={{y: -50, opacity: 0.2}}
-            animate={{y: 100, opacity: 1}}
+            initial={{y: -30}}
+            animate={{y: 90}}
             transition={{
-              ease: "easeInOut",
-              duration: 2,
+              ease: "easeIn",
+              duration: 1.5,
               repeat: Infinity,
-              delay: 0.8,
             }}
           >
-            <Image src="./arrowdown.svg" alt="arrow down" />
+            <Image maxW="1.5rem" src="./arrowdown.svg" alt="arrow down" />
           </motion.div>
 
-          <Text textStyle="featured" maxW="4.1rem">
-            Featured Work
-          </Text>
+          <Text textStyle="featured">Featured Work</Text>
         </Box>
       </Container>
 

@@ -19,7 +19,7 @@ export default function Navbar() {
         >
           <Link href="/">
             <a>
-              <Image src="/logo.svg" alt="logo image" />
+              <Image maxW="70px" src="/logo.svg" alt="logo image" />
             </a>
           </Link>
           <Link href="/about">
