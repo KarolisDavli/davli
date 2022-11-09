@@ -26,6 +26,9 @@ const theme = extendTheme({
       fontSize: "30px",
       fontWeight: "600",
     },
+    thisGuy: {
+      fontFamily: `'Share Tech Mono', ${base.fonts?.heading}`,
+    },
   },
   colors: {
     black: "#272727",

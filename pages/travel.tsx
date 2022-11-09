@@ -30,7 +30,7 @@ const childVariants = {
 export default function Sanjow() {
   return (
     <>
-      <Meta title="Davli / Aloe" />
+      <Meta title="Davli / Sanjow" />
       <FindHome />
       {/**Hero */}
       <Container maxW="container.lg">
@@ -45,7 +45,7 @@ export default function Sanjow() {
             animate="visible"
           >
             <VStack spacing="16px" alignItems="left">
-              <Box textStyle="h1">Aloe Beauty Store</Box>
+              <Box textStyle="h1">Reservare</Box>
               <Text maxW="600px">
                 Tempor lobortis quis sit cum quisque. Platea tempus ullamcorper
                 egestas quisque arcu auctor lacus. Egestas feugiat leo, sit
@@ -62,8 +62,17 @@ export default function Sanjow() {
             <VStack spacing="16px" alignItems="left">
               <Text textStyle="h2">Toolset</Text>
               <Box display="flex" flexWrap="wrap" gap="2.7rem" maxW="330px">
+                <motion.div variants={childVariants} transition={{delay: 0.1}}>
+                  <Text>NextJS</Text>
+                </motion.div>
+                <motion.div variants={childVariants} transition={{delay: 0.2}}>
+                  <Text>ChakraUI</Text>
+                </motion.div>
+                <motion.div variants={childVariants} transition={{delay: 0.3}}>
+                  <Text>Framer Motion</Text>
+                </motion.div>
                 <motion.div variants={childVariants} transition={{delay: 0.4}}>
-                  <Text>Adobe XD</Text>
+                  <Text>Figma</Text>
                 </motion.div>
               </Box>
             </VStack>
@@ -77,11 +86,12 @@ export default function Sanjow() {
         p="1rem"
         mt={{base: "10", md: "20"}}
       >
-        <video width="1150" autoPlay loop playsInline>
-          <source src="/projects/aloe/aloelanding.mp4" type="video/mp4" />
-        </video>
+        <Image
+          borderRadius="1.5rem"
+          src="/projects/travel/travelhero.jpg"
+          alt="Sanjow project image"
+        />
       </Box>
-
       {/**Detailed pages */}
       <Container maxW="container.lg" mt={{base: "10", md: "20"}}>
         <motion.div
@@ -96,7 +106,7 @@ export default function Sanjow() {
             gap="20"
           >
             <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Aloe Landing Page</Box>
+              <Box textStyle="h2">Optimised search results</Box>
               <Text>
                 As Sanjow bussiness is growing fast it requires more work power.
                 By beeing an excelent place to work Sanjow offers great
@@ -106,8 +116,8 @@ export default function Sanjow() {
             <Box display="flex" justifyContent="center">
               <Image
                 borderRadius="1.5rem"
-                src="/projects/aloe/aloewhole.jpg"
-                alt="Sanjow project image"
+                src="/projects/travel/travel2.jpg"
+                alt="Travel project image"
               />
             </Box>
           </Box>
@@ -129,12 +139,12 @@ export default function Sanjow() {
             <Box display="flex" justifyContent="center">
               <Image
                 borderRadius="1.5rem"
-                src="/projects/aloe/aloe2.jpg"
-                alt="Sanjow project image"
+                src="/projects/travel/mobile.jpg"
+                alt="Travel project image"
               />
             </Box>
             <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Aloe Products</Box>
+              <Box textStyle="h2">Same feel on all devices</Box>
               <Text>
                 As Sanjow bussiness is growing fast it requires more work power.
                 By beeing an excelent place to work Sanjow offers great
@@ -144,19 +154,6 @@ export default function Sanjow() {
           </Box>
         </motion.div>
       </Container>
-
-      {/**Ckeckout video */}
-      <motion.div
-        variants={containerVariants}
-        initial="init"
-        whileInView="visible"
-      >
-        <Box display="flex" justifyContent="center" p="1rem" mt="20">
-          <video playsInline width="1150" autoPlay loop>
-            <source src="/projects/aloe/checkout.mp4" type="video/mp4" />
-          </video>
-        </Box>
-      </motion.div>
     </>
   );
 }

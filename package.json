@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.10.4",
     "@fontsource/commissioner": "^4.5.9",
     "@fontsource/lexend-deca": "^4.5.12",
+    "@fontsource/share-tech-mono": "^4.5.9",
     "framer-motion": "^7.6.1",
     "next": "12.3.1",
     "react": "18.2.0",

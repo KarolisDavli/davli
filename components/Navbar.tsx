@@ -1,4 +1,4 @@
-import {Container, Box, Image} from "@chakra-ui/react";
+import {Container, Box, Image, Text} from "@chakra-ui/react";
 import Link from "next/link";
 import {motion} from "framer-motion";
 
@@ -23,7 +23,9 @@ export default function Navbar() {
             </a>
           </Link>
           <Link href="/about">
-            <a>this guy</a>
+            <a>
+              <Text textStyle="thisGuy">this guy</Text>
+            </a>
           </Link>
         </Box>
       </Container>

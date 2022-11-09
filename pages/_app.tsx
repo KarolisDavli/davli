@@ -3,6 +3,7 @@ import "@fontsource/lexend-deca/400.css";
 import "@fontsource/lexend-deca/500.css";
 import "@fontsource/lexend-deca/600.css";
 import "@fontsource/commissioner";
+import "@fontsource/share-tech-mono";
 
 import {ChakraProvider} from "@chakra-ui/react";
 import myTheme from "../theme/extendTheme";

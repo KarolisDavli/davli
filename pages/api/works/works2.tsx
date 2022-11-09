@@ -10,12 +10,12 @@ const works2 = [
   },
   {
     id: 4,
-    href: "/sanjow",
+    href: "/travel",
     role: "Web Design & Development",
-    alt: "Body Fuel design image",
-    src: "/projects/bodyfuel/bodyfuel.jpg",
-    title: "Body Fuel",
-    desc: "This is amazing",
+    alt: "Hotel booking platform",
+    src: "/projects/travel/travel.jpg",
+    title: "Reservare",
+    desc: "Hotel booking platform",
   },
 ];
 
