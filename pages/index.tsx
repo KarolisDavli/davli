@@ -42,6 +42,8 @@ const ellipseVariants = {
   },
 };
 
+const array = ["1", "2", "3"];
+
 const childVariants = {
   init: {opacity: 0},
   visible: {opacity: 1},
@@ -71,7 +73,15 @@ export default function Home() {
         // backgroundImage="linear-gradient(to right, #74ebd5 0%, #9face6 100%);"
       >
         <Container maxW="container.md">
-          <Box display="flex" alignItems="center" height="70vh">
+          <Box
+            display="flex"
+            alignItems="center"
+            height="70vh"
+            justifyContent="center"
+            flexDir={{base: "column", md: "row"}}
+            gap={{base: "4rem", md: "0"}}
+            pt={{base: "5rem", md: 0}}
+          >
             {/* <Box position="absolute" top="0" right="0" zIndex="-99">
               <Image src="/Group.svg" alt="blob" />
             </Box> */}
@@ -96,35 +106,26 @@ export default function Home() {
                 </motion.div>
               </motion.div>
             </VStack>
-            <motion.svg
-              animate="start"
-              width="380px"
-              height="380px"
-              viewBox="0 0 480 533"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <motion.path
-                variants={ellipseVariants}
-                transition={{
-                  duration: 16,
-                  yoyo: Infinity,
-                  repeat: Infinity,
-                }}
-                fill="url(#paint0_radial_185_99)"
-              />
-              <motion.radialGradient
-                id="paint0_radial_185_99"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(217.187 183.847) rotate(90) scale(183.847 217.187)"
+            <Box>
+              <motion.svg
+                animate="start"
+                width="380px"
+                height="380px"
+                viewBox="0 0 480 533"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <stop stop-color="#EEAECA" />
-                <stop offset="0.859375" stop-color="#94BBE9" />
-              </motion.radialGradient>
-            </motion.svg>
+                <motion.path
+                  variants={ellipseVariants}
+                  transition={{
+                    duration: 16,
+                    yoyo: Infinity,
+                    repeat: Infinity,
+                  }}
+                  fill="#ff8282"
+                />
+              </motion.svg>
+            </Box>
           </Box>
           <Box
             display="flex"
