@@ -14,8 +14,8 @@ export default function Navbar() {
           display="flex"
           justifyContent="space-between"
           alignItems="center"
-          mt="6"
-          mb="6"
+          pt="6"
+          pb="6"
         >
           <Link href="/">
             <a>
