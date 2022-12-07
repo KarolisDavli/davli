@@ -106,7 +106,7 @@ export default function Home() {
                 </motion.div>
               </motion.div>
             </VStack>
-            <Box>
+            <Box mt={{base: "0", md: "5"}}>
               <motion.svg
                 animate="start"
                 width="380px"
