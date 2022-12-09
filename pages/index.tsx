@@ -42,8 +42,6 @@ const ellipseVariants = {
   },
 };
 
-const array = ["1", "2", "3"];
-
 const childVariants = {
   init: {opacity: 0},
   visible: {opacity: 1},
@@ -69,7 +67,7 @@ export default function Home() {
       {/**Hero */}
       <Meta title="Davli" />
       <Box
-        height="100vh"
+        height="70vh"
         // backgroundImage="linear-gradient(to right, #74ebd5 0%, #9face6 100%);"
       >
         <Container maxW="container.md">
@@ -151,7 +149,7 @@ export default function Home() {
       </Box>
 
       {/**Works */}
-      <Container maxW="container.lg" mt={{base: "0", md: "40"}}>
+      <Container id="works" maxW="container.lg" mt={{base: "0", md: "40"}}>
         <Box
           display="flex"
           w="100%"

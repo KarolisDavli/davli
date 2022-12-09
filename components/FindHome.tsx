@@ -6,7 +6,7 @@ export default function FindHome() {
     <>
       <Container maxW="container.xl">
         <Box mt="20" mb="20" ml={{base: "0", md: "20"}}>
-          <Link href="/">
+          <Link href="/#works" scroll={false}>
             <Box
               display="flex"
               gap="1rem"
@@ -15,7 +15,7 @@ export default function FindHome() {
               }}
             >
               <Image
-                src="arrowback.svg"
+                src="backarrow.svg"
                 alt="back to home"
                 pt="2px"
                 maxW="1.4rem"
