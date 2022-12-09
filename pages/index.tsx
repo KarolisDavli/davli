@@ -80,7 +80,7 @@ export default function Home() {
             justifyContent="center"
             flexDir={{base: "column", md: "row"}}
             gap={{base: "4rem", md: "0"}}
-            pt={{base: "5rem", md: 0}}
+            pt={{base: "10rem", md: 0}}
           >
             {/* <Box position="absolute" top="0" right="0" zIndex="-99">
               <Image src="/Group.svg" alt="blob" />
