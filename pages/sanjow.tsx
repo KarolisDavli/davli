@@ -47,10 +47,11 @@ export default function Sanjow() {
             <VStack spacing="16px" alignItems="left">
               <Box textStyle="h1">Sanjow</Box>
               <Text maxW="600px">
-                Tempor lobortis quis sit cum quisque. Platea tempus ullamcorper
-                egestas quisque arcu auctor lacus. Egestas feugiat leo, sit
-                mauris, ut. Est arcu justo aliquet enim adipiscing nulla.
-                Convallis dui habitasse massa vulputate.
+                Sanjow - ecommerce group running businesses across multiple
+                industries. Company&apos;s pain was outdated website. End
+                result: remodeled user experience with a new fresh look. A
+                combination of web technologies to bring the design in to live
+                website.
               </Text>
             </VStack>
           </motion.div>
@@ -106,12 +107,8 @@ export default function Sanjow() {
             gap="20"
           >
             <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Sanjow careers page</Box>
-              <Text>
-                As Sanjow bussiness is growing fast it requires more work power.
-                By beeing an excelent place to work Sanjow offers great
-                enviroment for three-dimentional growth.
-              </Text>
+              <Box textStyle="h2">Pixel perfect</Box>
+              <Text>Developing own designs brings outstanding results.</Text>
             </VStack>
             <Box display="flex" justifyContent="center">
               <Image

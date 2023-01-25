@@ -5,6 +5,7 @@ import "@fontsource/lexend-deca/600.css";
 import "@fontsource/commissioner";
 import "@fontsource/share-tech-mono";
 
+import {Analytics} from "@vercel/analytics/react";
 import {ChakraProvider} from "@chakra-ui/react";
 import myTheme from "../theme/extendTheme";
 
@@ -16,6 +17,7 @@ function MyApp({Component, pageProps}) {
     <ChakraProvider theme={myTheme}>
       <Navbar />
       <Component {...pageProps} />
+      <Analytics />
       <Footer />
     </ChakraProvider>
   );

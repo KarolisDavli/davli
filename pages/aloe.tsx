@@ -47,10 +47,12 @@ export default function Sanjow() {
             <VStack spacing="16px" alignItems="left">
               <Box textStyle="h1">Aloe Beauty Store</Box>
               <Text maxW="600px">
-                Tempor lobortis quis sit cum quisque. Platea tempus ullamcorper
-                egestas quisque arcu auctor lacus. Egestas feugiat leo, sit
-                mauris, ut. Est arcu justo aliquet enim adipiscing nulla.
-                Convallis dui habitasse massa vulputate.
+                Aloe is a small company producing natural body care products
+                infused with the aloe plant. I was responsible for designing
+                landing and product pages and developing a landing page for
+                their brand. The main goal of a website is to drive users to use
+                e-shop, as well as get to know the company and register for a
+                newsletter.
               </Text>
             </VStack>
           </motion.div>
