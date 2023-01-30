@@ -50,8 +50,8 @@ export default function Sanjow() {
                 Sanjow - ecommerce group running businesses across multiple
                 industries. Company&apos;s pain was outdated website. End
                 result: remodeled user experience with a new fresh look. A
-                combination of web technologies to bring the design in to live
-                website.
+                combination of modern web technologies to bring the design in to
+                a live website.
               </Text>
             </VStack>
           </motion.div>
@@ -127,27 +127,12 @@ export default function Sanjow() {
           initial="init"
           whileInView="visible"
         >
-          <Box
-            display="flex"
-            flexDir={{base: "column-reverse", sm: "column-reverse", md: "row"}}
-            alignItems="center"
-            gap="20"
-          >
-            <Box display="flex" justifyContent="center">
-              <Image
-                borderRadius="1.5rem"
-                src="/projects/sanjow/sanjow2.jpg"
-                alt="Sanjow project image"
-              />
-            </Box>
-            <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Sanjow Studio</Box>
-              <Text>
-                As Sanjow bussiness is growing fast it requires more work power.
-                By beeing an excelent place to work Sanjow offers great
-                enviroment for three-dimentional growth.
-              </Text>
-            </VStack>
+          <Box display="flex" justifyContent="center">
+            <Image
+              borderRadius="1.5rem"
+              src="/projects/sanjow/whole.jpg"
+              alt="Sanjow project image"
+            />
           </Box>
         </motion.div>
       </Container>

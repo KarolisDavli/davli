@@ -148,17 +148,19 @@ export default function Sanjow() {
       </Container>
 
       {/**Ckeckout video */}
-      <motion.div
-        variants={containerVariants}
-        initial="init"
-        whileInView="visible"
-      >
-        <Box display="flex" justifyContent="center" p="1rem" mt="20">
-          <video playsInline width="1150" autoPlay loop>
-            <source src="/projects/aloe/checkout.mp4" type="video/mp4" />
-          </video>
-        </Box>
-      </motion.div>
+      <Container maxW="container.lg" mt={{base: "10", md: "20"}}>
+        <motion.div
+          variants={containerVariants}
+          initial="init"
+          whileInView="visible"
+        >
+          <Box display="flex" justifyContent="center" mt="20">
+            <video playsInline width="1150" autoPlay loop>
+              <source src="/projects/aloe/checkout.mp4" type="video/mp4" />
+            </video>
+          </Box>
+        </motion.div>
+      </Container>
     </>
   );
 }
