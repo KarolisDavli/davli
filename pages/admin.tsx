@@ -47,10 +47,18 @@ export default function Sanjow() {
             <VStack spacing="16px" alignItems="left">
               <Box textStyle="h1">Admin Solutions</Box>
               <Text maxW="600px">
-                Tempor lobortis quis sit cum quisque. Platea tempus ullamcorper
-                egestas quisque arcu auctor lacus. Egestas feugiat leo, sit
-                mauris, ut. Est arcu justo aliquet enim adipiscing nulla.
-                Convallis dui habitasse massa vulputate.
+                {/*         
+                As brand new start up &apos;Admin Solutions&apos; was in a need for a whole package including not only
+                website design and brand and it&apos;s identity too
+
+
+                Coming from ground zero admin solutions
+
+                Brand identity, website design is an absolute necessity */}
+                As for a brand new start up, website and brand identity was a
+                necessity for &apos;Admin Solutions&apos;. Helping out with all
+                the design assets and working closely with inhouse developers
+                made new business to start it&aps;s journey.
               </Text>
             </VStack>
           </motion.div>
@@ -96,18 +104,17 @@ export default function Sanjow() {
             alignItems="center"
             gap="20"
           >
-            <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Services & Pricing page</Box>
-              <Text>
-                As Admin Solutions bussiness is growing fast it requires more
-                work power. By beeing an excelent place to work Admin Solutions
-                offers great enviroment for three-dimentional growth.
-              </Text>
-            </VStack>
             <Box display="flex" justifyContent="center">
               <Image
                 borderRadius="1.5rem"
-                src="/projects/admin/admin2.jpg"
+                src="/projects/admin/Frame 12.jpg"
+                alt="Sanjow project image"
+              />
+            </Box>
+            <Box display="flex" justifyContent="center">
+              <Image
+                borderRadius="1.5rem"
+                src="/projects/admin/Frame 10.jpg"
                 alt="Sanjow project image"
               />
             </Box>
@@ -115,7 +122,7 @@ export default function Sanjow() {
         </motion.div>
       </Container>
 
-      <Container maxW="container.lg" mt="20">
+      <Container maxW="container.lg" mt={{base: "10", md: "20"}}>
         <motion.div
           variants={containerVariants}
           initial="init"
@@ -123,24 +130,40 @@ export default function Sanjow() {
         >
           <Box
             display="flex"
-            flexDir={{base: "column-reverse", sm: "column-reverse", md: "row"}}
+            flexDir={{base: "column", sm: "column", md: "row"}}
             alignItems="center"
             gap="20"
           >
             <Box display="flex" justifyContent="center">
               <Image
                 borderRadius="1.5rem"
-                src="/projects/admin/responsive.jpg"
+                src="/projects/admin/Frame 13.jpg"
                 alt="Sanjow project image"
               />
             </Box>
-            <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Full responsiveness</Box>
-              <Text>
-                Website is fully responsive and keeps it&apos;s looks on on
-                different screen sizes
-              </Text>
-            </VStack>
+            <Box display="flex" justifyContent="center">
+              <Image
+                borderRadius="1.5rem"
+                src="/projects/admin/Frame 14.jpg"
+                alt="Sanjow project image"
+              />
+            </Box>
+          </Box>
+        </motion.div>
+      </Container>
+
+      <Container maxW="container.lg" mt={{base: "10", md: "20"}}>
+        <motion.div
+          variants={containerVariants}
+          initial="init"
+          whileInView="visible"
+        >
+          <Box display="flex" justifyContent="center">
+            <Image
+              borderRadius="1.5rem"
+              src="/projects/admin/Frame 9.jpg"
+              alt="Sanjow project image"
+            />
           </Box>
         </motion.div>
       </Container>
