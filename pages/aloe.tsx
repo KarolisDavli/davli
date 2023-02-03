@@ -76,7 +76,6 @@ export default function Sanjow() {
       <Box
         display="flex"
         justifyContent="center"
-        a
         p="1rem"
         mt={{base: "10", md: "20"}}
       >
