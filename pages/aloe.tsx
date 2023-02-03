@@ -76,6 +76,7 @@ export default function Sanjow() {
       <Box
         display="flex"
         justifyContent="center"
+        a
         p="1rem"
         mt={{base: "10", md: "20"}}
       >
@@ -98,11 +99,10 @@ export default function Sanjow() {
             gap="20"
           >
             <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Aloe Landing Page</Box>
+              <Box textStyle="h2">Home Page</Box>
               <Text>
-                As Sanjow bussiness is growing fast it requires more work power.
-                By beeing an excelent place to work Sanjow offers great
-                enviroment for three-dimentional growth.
+                A brand new landing page for a small shop. Making
+                visitor-to-conversions possible.
               </Text>
             </VStack>
             <Box display="flex" justifyContent="center">
@@ -112,37 +112,6 @@ export default function Sanjow() {
                 alt="Sanjow project image"
               />
             </Box>
-          </Box>
-        </motion.div>
-      </Container>
-
-      <Container maxW="container.lg" mt={{base: "10", md: "20"}}>
-        <motion.div
-          variants={containerVariants}
-          initial="init"
-          whileInView="visible"
-        >
-          <Box
-            display="flex"
-            flexDir={{base: "column-reverse", sm: "column-reverse", md: "row"}}
-            alignItems="center"
-            gap="20"
-          >
-            <Box display="flex" justifyContent="center">
-              <Image
-                borderRadius="1.5rem"
-                src="/projects/aloe/aloe2.jpg"
-                alt="Sanjow project image"
-              />
-            </Box>
-            <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Aloe Products</Box>
-              <Text>
-                As Sanjow bussiness is growing fast it requires more work power.
-                By beeing an excelent place to work Sanjow offers great
-                enviroment for three-dimentional growth.
-              </Text>
-            </VStack>
           </Box>
         </motion.div>
       </Container>
