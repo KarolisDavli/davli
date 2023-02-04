@@ -11,11 +11,11 @@ const works2 = [
   {
     id: 4,
     href: "/travel",
-    role: "Web Design & Development",
-    alt: "Hotel booking platform",
+    role: "Web Design",
+    alt: "A faster way to pass the airport security",
     src: "/projects/travel/travel.jpg",
-    title: "Reservare",
-    desc: "Hotel booking platform",
+    title: "Fast Track Fly",
+    desc: "A faster way to pass the airport security",
   },
 ];
 
