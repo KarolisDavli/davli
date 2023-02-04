@@ -108,7 +108,7 @@ export default function Sanjow() {
               <Image
                 borderRadius="1.5rem"
                 src="/projects/aloe/aloewhole.jpg"
-                alt="Sanjow project image"
+                alt="Aloe project image"
               />
             </Box>
           </Box>

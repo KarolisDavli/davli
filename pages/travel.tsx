@@ -45,12 +45,11 @@ export default function Sanjow() {
             animate="visible"
           >
             <VStack spacing="16px" alignItems="left">
-              <Box textStyle="h1">Reservare</Box>
+              <Box textStyle="h1">Fast Track Fly</Box>
               <Text maxW="600px">
-                Tempor lobortis quis sit cum quisque. Platea tempus ullamcorper
-                egestas quisque arcu auctor lacus. Egestas feugiat leo, sit
-                mauris, ut. Est arcu justo aliquet enim adipiscing nulla.
-                Convallis dui habitasse massa vulputate.
+                New landing page design driving visitors to try out a refined
+                process going through airport security. Additionaly I helped out
+                company creating brand identity including logo and color theme.
               </Text>
             </VStack>
           </motion.div>
@@ -62,15 +61,6 @@ export default function Sanjow() {
             <VStack spacing="16px" alignItems="left">
               <Text textStyle="h2">Toolset</Text>
               <Box display="flex" flexWrap="wrap" gap="2.7rem" maxW="330px">
-                <motion.div variants={childVariants} transition={{delay: 0.1}}>
-                  <Text>NextJS</Text>
-                </motion.div>
-                <motion.div variants={childVariants} transition={{delay: 0.2}}>
-                  <Text>ChakraUI</Text>
-                </motion.div>
-                <motion.div variants={childVariants} transition={{delay: 0.3}}>
-                  <Text>Framer Motion</Text>
-                </motion.div>
                 <motion.div variants={childVariants} transition={{delay: 0.4}}>
                   <Text>Figma</Text>
                 </motion.div>
@@ -89,7 +79,7 @@ export default function Sanjow() {
         <Image
           borderRadius="1.5rem"
           src="/projects/travel/travelhero.jpg"
-          alt="Sanjow project image"
+          alt="travel project image"
         />
       </Box>
       {/**Detailed pages */}
@@ -105,19 +95,18 @@ export default function Sanjow() {
             alignItems="center"
             gap="20"
           >
-            <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Optimised search results</Box>
-              <Text>
-                As Sanjow bussiness is growing fast it requires more work power.
-                By beeing an excelent place to work Sanjow offers great
-                enviroment for three-dimentional growth.
-              </Text>
-            </VStack>
             <Box display="flex" justifyContent="center">
               <Image
                 borderRadius="1.5rem"
-                src="/projects/travel/travel2.jpg"
-                alt="Travel project image"
+                src="/projects/travel/travelcolors.jpg"
+                alt="Color theme"
+              />
+            </Box>
+            <Box display="flex" justifyContent="center">
+              <Image
+                borderRadius="1.5rem"
+                src="/projects/travel/travellogos.jpg"
+                alt="Logo variations"
               />
             </Box>
           </Box>
@@ -130,27 +119,12 @@ export default function Sanjow() {
           initial="init"
           whileInView="visible"
         >
-          <Box
-            display="flex"
-            flexDir={{base: "column-reverse", sm: "column-reverse", md: "row"}}
-            alignItems="center"
-            gap="20"
-          >
-            <Box display="flex" justifyContent="center">
-              <Image
-                borderRadius="1.5rem"
-                src="/projects/travel/mobile.jpg"
-                alt="Travel project image"
-              />
-            </Box>
-            <VStack spacing="16px" alignItems="left" flexBasis="50%">
-              <Box textStyle="h2">Same feel on all devices</Box>
-              <Text>
-                As Sanjow bussiness is growing fast it requires more work power.
-                By beeing an excelent place to work Sanjow offers great
-                enviroment for three-dimentional growth.
-              </Text>
-            </VStack>
+          <Box display="flex" justifyContent="center">
+            <Image
+              borderRadius="1.5rem"
+              src="/projects/travel/travel2.jpg"
+              alt="travel project image"
+            />
           </Box>
         </motion.div>
       </Container>

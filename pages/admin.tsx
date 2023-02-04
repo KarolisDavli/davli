@@ -88,7 +88,7 @@ export default function Sanjow() {
         <Image
           borderRadius="1.5rem"
           src="/projects/admin/adminhero.jpg"
-          alt="Sanjow project image"
+          alt="admin project image"
         />
       </Box>
       {/**Detailed pages */}
@@ -107,15 +107,15 @@ export default function Sanjow() {
             <Box display="flex" justifyContent="center">
               <Image
                 borderRadius="1.5rem"
-                src="/projects/admin/Frame 12.jpg"
-                alt="Sanjow project image"
+                src="/projects/admin/logosingle.jpg"
+                alt="admin project image"
               />
             </Box>
             <Box display="flex" justifyContent="center">
               <Image
                 borderRadius="1.5rem"
                 src="/projects/admin/Frame 10.jpg"
-                alt="Sanjow project image"
+                alt="admin project image"
               />
             </Box>
           </Box>
@@ -138,7 +138,7 @@ export default function Sanjow() {
               <Image
                 borderRadius="1.5rem"
                 src="/projects/admin/Frame 13.jpg"
-                alt="Sanjow project image"
+                alt="admin project image"
               />
             </Box>
             <Box display="flex" justifyContent="center">
@@ -162,7 +162,7 @@ export default function Sanjow() {
             <Image
               borderRadius="1.5rem"
               src="/projects/admin/Frame 9.jpg"
-              alt="Sanjow project image"
+              alt="admin project image"
             />
           </Box>
         </motion.div>
