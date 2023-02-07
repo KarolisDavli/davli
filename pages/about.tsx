@@ -67,8 +67,14 @@ export default function Abount() {
               <motion.div variants={childVariants}>
                 <Text>
                   I&apos;m Karolis Davli, a user interface designer and
-                  developer based in sunny Malta, focused on user experience,
-                  product design and development.
+                  developer based in sunny Malta. I love crafting practical and
+                  fun web apps accessible for everyone. My main focus is on user
+                  experience, product design and it&apos;s development. <br />
+                  <br />
+                  By having technical fontend skills together with design
+                  thinking I can lead users through the whole experience of an
+                  app and understand technical limitations and challenges from
+                  development perspective.
                 </Text>
               </motion.div>
             </VStack>
