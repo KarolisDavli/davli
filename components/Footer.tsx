@@ -60,7 +60,7 @@ export default function Footer() {
                 >
                   <Text textStyle="h2">Lets get started!</Text>
                   <Text textStyle={{base: "mobileh2", md: "h1"}}>
-                    karolis@davli.design
+                    hello@karolisdavli.com
                   </Text>
                 </motion.div>
               </Box>
@@ -73,10 +73,16 @@ export default function Footer() {
                 <Box display="flex" flexDir="column" gap="1rem">
                   <Text>You can also find me on:</Text>
                   <Box display="flex" gap="1rem">
-                    <Link>
+                    <Link
+                      href="https://dribbble.com/KarolisDavli"
+                      target="_blank"
+                    >
                       <Image src="/dribbble.svg" alt="dribble icon" />
                     </Link>
-                    <Link>
+                    <Link
+                      href="https://www.instagram.com/otaikaipfaina/"
+                      target="_blank"
+                    >
                       <Image src="/instagram.svg" alt="instagram icon" />
                     </Link>
                   </Box>
