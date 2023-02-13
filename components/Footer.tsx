@@ -1,6 +1,6 @@
 import {Box, Container, Text, Link, Image} from "@chakra-ui/react";
 
-import {motion, useInView} from "framer-motion";
+import {motion} from "framer-motion";
 import {useRef} from "react";
 
 const bgAnimation = {

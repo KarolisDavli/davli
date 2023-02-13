@@ -3,7 +3,9 @@ import Workcard from "../components/Workcard";
 import works from "./api/works/works";
 import works2 from "./api/works/works2";
 
-import {Container, VStack, Text, Box, Image} from "@chakra-ui/react";
+import Image from "next/image";
+
+import {Container, VStack, Text, Box} from "@chakra-ui/react";
 
 import {motion} from "framer-motion";
 
@@ -65,7 +67,11 @@ export default function Home() {
   return (
     <>
       {/**Hero */}
-      <Meta title="Davli" />
+      <Meta
+        title="Davli | Web Design & Development"
+        keywords="Web Design Web Development Services"
+        description="Everything you need for your next web project"
+      />
       <Box
         height="70vh"
         // backgroundImage="linear-gradient(to right, #74ebd5 0%, #9face6 100%);"
@@ -140,7 +146,12 @@ export default function Home() {
                 repeat: Infinity,
               }}
             >
-              <Image maxW="1.5rem" src="./arrowdown.svg" alt="arrow down" />
+              <Image
+                width="24px"
+                height="24px"
+                src="/arrowdown.svg"
+                alt="arrow down"
+              />
             </motion.div>
 
             <Text textStyle="featured">Featured Work</Text>
