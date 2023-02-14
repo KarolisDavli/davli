@@ -1,8 +1,6 @@
-import {Container, VStack, Text, Box} from "@chakra-ui/react";
+import {Container, VStack, Text, Box, Image} from "@chakra-ui/react";
 import FindHome from "../components/FindHome";
 import Meta from "../components/Meta";
-
-import Image from "next/image";
 
 import {motion} from "framer-motion";
 
@@ -36,13 +34,15 @@ export default function Abount() {
       <Meta title="Davli" />
       <FindHome />
       <Container maxW="container.lg" p={{base: "1rem", md: "3rem"}}>
-        <Box borderRadius="2rem" margin="auto" m="auto">
+        <Box margin="auto">
           <Image
-            // boxSize={{base: "auto", sm: "auto", md: "600px"}}
-            // width={{base: "auto", sm: "auto", md: "auto"}}
+            boxSize={{base: "auto", sm: "auto", md: "600px"}}
+            width={{base: "auto", sm: "auto", md: "auto"}}
             height="400px"
             src="/mysetup.jpg"
             alt="picture of not me"
+            m="auto"
+            borderRadius="2rem"
           />
         </Box>
       </Container>
