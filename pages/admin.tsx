@@ -58,7 +58,7 @@ export default function Sanjow() {
                 As for a brand new start up, website and brand identity was a
                 necessity for &apos;Admin Solutions&apos;. Helping out with all
                 the design assets and working closely with inhouse developers
-                made new business to start it&aps;s journey.
+                made new business to start it&apos;s journey.
               </Text>
             </VStack>
           </motion.div>
