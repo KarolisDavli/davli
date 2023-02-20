@@ -38,7 +38,6 @@ export default function Abount() {
           <Image
             boxSize={{base: "auto", sm: "auto", md: "600px"}}
             width={{base: "auto", sm: "auto", md: "auto"}}
-            height="400px"
             src="/mysetup.jpg"
             alt="picture of not me"
             m="auto"
