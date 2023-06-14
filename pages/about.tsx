@@ -70,7 +70,7 @@ export default function Abount() {
                   fun web apps accessible for everyone. My main focus is on user
                   experience, product design and it&apos;s development. <br />
                   <br />
-                  By having technical fontend skills together with design
+                  By having technical frontend skills together with design
                   thinking I can lead users through the whole experience of an
                   app and understand technical limitations and challenges from
                   development perspective.
