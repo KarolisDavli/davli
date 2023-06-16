@@ -165,7 +165,7 @@ export default function Home() {
           display="flex"
           w="100%"
           flexDir={{base: "column", sm: "column", md: "row"}}
-          alignItems={{base: "center"}}
+          alignItems="flex-start"
           gap={{base: "5rem", md: "2rem"}}
         >
           <Box display="flex" flexDir="column" gap="5rem" mt="20">

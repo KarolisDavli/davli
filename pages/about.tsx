@@ -33,7 +33,7 @@ export default function Abount() {
       {/**About here */}
       <Meta title="Davli" />
       <FindHome />
-      <Container maxW="container.lg" p={{base: "1rem", md: "3rem"}}>
+      {/* <Container maxW="container.lg" p={{base: "1rem", md: "3rem"}}>
         <Box margin="auto">
           <Image
             boxSize={{base: "auto", sm: "auto", md: "600px"}}
@@ -44,7 +44,7 @@ export default function Abount() {
             borderRadius="2rem"
           />
         </Box>
-      </Container>
+      </Container> */}
 
       {/**Info */}
       <Container maxW="container.md">

@@ -1,5 +1,14 @@
 const works = [
   {
+    id: 0,
+    href: "/supportlabs",
+    role: "Web Design & Development",
+    alt: "Support labs design image",
+    src: "/projects/suplabs/sm.jpg",
+    title: "Support Labs",
+    desc: "Digital marketing agency",
+  },
+  {
     id: 1,
     href: "/sanjow",
     role: "Web Design & Development",
@@ -15,7 +24,7 @@ const works = [
     alt: "Aloe design image",
     src: "/projects/aloe/aloemain.jpg",
     title: "Aloe",
-    desc: "Natural body care products infused with the aloe plant ",
+    desc: "Natural body care products infused with the aloe plant",
   },
 ];
 

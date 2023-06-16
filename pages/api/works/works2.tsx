@@ -17,6 +17,15 @@ const works2 = [
     title: "Fast Track Fly",
     desc: "A faster way to pass the airport security",
   },
+  {
+    id: 5,
+    href: "/#",
+    role: "Web Design, Web Development, Branding",
+    alt: "A faster way to pass the airport security",
+    src: "/projects/newspot.jpg",
+    title: "Make your idea happen",
+    desc: "Let's talk",
+  },
 ];
 
 export default works2;
