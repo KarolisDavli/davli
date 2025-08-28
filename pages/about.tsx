@@ -65,15 +65,16 @@ export default function Abount() {
               </motion.div>
               <motion.div variants={childVariants}>
                 <Text>
-                  I&apos;m Karolis Davli, a user interface designer and
-                  developer based in sunny Malta. I love crafting practical and
-                  fun web apps accessible for everyone. My main focus is on user
-                  experience, product design and it&apos;s development. <br />
+                  I&apos;m Karolis Davli, a front-end developer focused on
+                  building scalable, responsive applications with React and
+                  TypeScript. I create well-structured, maintainable code and
+                  deliver features that integrate seamlessly with APIs while
+                  ensuring an exceptional user experience.
                   <br />
-                  By having technical frontend skills together with design
-                  thinking I can lead users through the whole experience of an
-                  app and understand technical limitations and challenges from
-                  development perspective.
+                  <br />
+                  Currently relocating to Cyprus and open to opportunities where
+                  I can contribute to modern web applications and continuously
+                  grow in front-end architecture.
                 </Text>
               </motion.div>
             </VStack>
