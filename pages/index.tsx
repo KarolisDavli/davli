@@ -97,7 +97,7 @@ export default function Home() {
               >
                 <Box textStyle="h1">Karolis Davli</Box>
                 <motion.div variants={childVariants}>
-                  <Text textStyle="h2">UI Developer</Text>
+                  <Text textStyle="h2">Front End Developer</Text>
                 </motion.div>
                 <motion.div variants={childVariants} transition={{delay: 0.2}}>
                   <Text maxW="360px">
