@@ -97,7 +97,7 @@ export default function Sanjow() {
         <Image
           borderRadius="1.5rem"
           src="/projects/wedding/md.jpg"
-          alt="Sanjow project image"
+          alt="Wedding project image"
         />
       </Box>
       {/**Detailed pages */}
@@ -127,7 +127,7 @@ export default function Sanjow() {
               <Image
                 borderRadius="1.5rem"
                 src="/projects/wedding/small.jpg"
-                alt="Sanjow project image"
+                alt="Wedding project image"
               />
             </Box>
           </Box>
