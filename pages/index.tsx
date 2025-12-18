@@ -5,7 +5,7 @@ import works2 from "./api/works/works2";
 
 import Image from "next/image";
 
-import {Container, VStack, Text, Box} from "@chakra-ui/react";
+import {Container, VStack, Text, Box, Button} from "@chakra-ui/react";
 
 import {motion} from "framer-motion";
 
@@ -107,6 +107,18 @@ export default function Home() {
                     My name is Karolis. I design & build awesome web projects
                     for startups or anyone who needs an online presence.
                   </Text>
+                  <Button
+                    mt="24px"
+                    backgroundColor="#ff8282"
+                    color="white"
+                    onClick={() => {
+                      const worksSection = document.getElementById("works");
+                      if (worksSection)
+                        worksSection.scrollIntoView({behavior: "smooth"});
+                    }}
+                  >
+                    See My Work
+                  </Button>
                 </motion.div>
               </motion.div>
             </VStack>
